@@ -1,0 +1,111 @@
+$hue:#2055b1;
+$max-w:1053px;
+$col-gray:#e5e5e5;
+
+html{font-size: 14px;color: #4b4b4b;}
+.widfix { max-width: 1280px; margin: 0 auto; }
+a { color: inherit;border-radius: 0;}
+a:hover, a:focus { color: inherit; text-decoration: none; }
+ul { margin-bottom: 0; }
+.h1, .h2, .h3, h1, h2, h3 {
+   margin: 0;
+}
+.btn{padding: 0;border-radius: 0;height: auto;}
+.elps { -o-text-overflow: ellipsis; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; border-collapse: collapse; }
+.elps-line2 { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+
+input{
+	height: 46px;
+	border: 1px solid #dcdcdc;
+	padding: 0 10px;
+	width: 100%;
+}
+/*隐藏掉checkbox*/
+input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            display: none;
+        }
+/*未选中时*/        
+input[type="checkbox"]+i {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background: url(../images/check_ico.png) no-repeat;
+            background-position-y: -25px;
+            position: relative;
+            border: 1px solid $col-gray;
+        }
+/*选中checkbox时,修改背景图片的位置*/            
+input[type="checkbox"]:checked+i {
+    background-position: 0 0px;
+    border: none;
+}
+.inpuItem{
+	position: relative;
+	.inputTit{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 10px;
+		.tit{
+			font-size: 14px;
+			color: #4b4b4b;
+			font-weight: bold;
+		}
+		.tip{
+			color:#464646;
+		}
+	}
+	label.error{
+		color: #ff2020;
+		font-size: 14px;
+		margin-top: 5px;
+		margin-bottom: 0;
+	    font-weight: normal;
+	}
+}
+
+@import "common.scss";
+@import "product.scss";
+.welcome{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #1c2127;
+	.w-cont{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		width: 424px;
+		text-align: center;
+		color: #fff;
+		.t_head{
+			.tit{
+				font-size: 30px;
+				margin-top: 24px;
+			}
+		}
+		.intro{
+			font-size: 14px;
+			margin-top: 48px;
+		}
+		.btns{
+			margin-top: 68px;
+			a{
+				background-color: $hue;
+				line-height: 40px;
+				width: 174px;
+				border-radius: 2px;
+				font-size: 14px;
+				display: inline-block;
+				margin: 0 13px 0 13px;
+			}
+		}
+	}
+}

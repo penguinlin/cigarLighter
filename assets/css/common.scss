@@ -1,0 +1,530 @@
+.header{
+	height: 74px;
+	.wrapper{
+		height: 74px;
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: #fff;
+		z-index: 99;
+		border-bottom: 1px solid $col-gray;
+	}
+	.lw{
+		padding-left: 30px;
+		.logo{margin-top: 22px;}
+		ul{
+			font-size: 0;
+			margin-left: 38px;
+			li{
+				display: inline-block;
+				font-size: 14px;
+				color: #3c3c3c;
+				font-weight: bold;
+				line-height: 74px;
+				margin-right:56px;
+				&:last-child{
+					margin-right: 0
+				}
+				a{
+					display: block;
+				}
+				&:hover{
+					color: $hue;
+				}
+			}
+		}
+	}
+	.rw{
+		padding-right: 156px;
+		ul{
+			font-size: 0;
+			li{
+				display: inline-block;
+				font-size: 14px;
+				color: #3c3c3c;
+				font-weight: bold;
+				line-height: 74px;
+				margin-right:48px;
+				a{
+					display: block;
+				}
+				&:hover{
+					color: $hue;
+				}
+			}
+		}
+		.shopcart{
+			margin-top: 20px;
+			position: relative;
+			cursor: pointer;
+			.num{
+				background-color: #00b96b;
+				border: 1px solid #fff;
+				border-radius: 10px;
+				position: absolute;
+				bottom: -4px;
+				left: 50%;
+				transform: translateX(-90%);
+				line-height: 16px;
+				min-width: 18px;
+				text-align: center;
+				color: #fff;
+				font-size: 12px;
+				padding: 0 5px;
+			}
+		}
+	}
+}
+@media (max-width:800px) {
+	.header .rw{padding-right: 30px;}
+}
+.tbanner{
+	width: 100%;
+	img{
+		width: 100%;
+	}
+}
+.footer{
+	background-color: #303338;
+	font-size: 14px;
+	color: #b2b2b2;	
+	.cont{
+		max-width: 1440px;
+		padding: 64px 88px;
+		margin:0 auto;
+		ul{
+			line-height: 26px;
+		}
+		.fus{
+			margin-top: 46px;
+			.icons{
+				a{
+					width: 44px;
+					height: 44px;
+					border-radius: 50%;
+					overflow: hidden;
+					display: inline-block;
+					margin-top: 18px;
+					margin-right: 18px;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+	
+}
+@media (max-width:800px) {
+	.footer{
+		.cont{
+			padding: 20px;
+			&>div:nth-child(n+3){
+				margin-top: 10px;
+			}
+		}
+
+	}
+}
+
+
+.tbanner{
+	width: 100%;
+	img{
+		width: 100%;
+	}
+}
+.fullBanner{
+	width: 100%;
+	img{
+		width: 100%;
+	}
+}
+.session.threePro{
+	padding-top: 144px;
+	padding-bottom: 50px;
+	.wrapper{
+		max-width: $max-w;
+		width: 80%;
+		margin: 0 auto;
+		font-size: 0;
+		display: flex;
+		justify-content: center;
+		a{
+			flex:1;
+			border: 1px solid $col-gray;
+			margin:0 10px;
+			max-width:338px;
+			overflow: hidden;
+			text-align: center;
+			.title{
+				padding: 30px 20px 10px 20px;
+				h3{
+					font-size: 14px;
+					color: #444444;
+					font-weight: bold;
+				}
+				p{
+					font-size: 14px;
+					color: #4a4a4a;
+					margin-top: 10px;
+					width: 100%;
+				}
+			}
+			.thumb{
+				width: 100%;
+			}
+			.btn{
+				line-height: 56px;
+				font-size: 12px;
+				font-weight: bold;
+				color: $hue;
+				border: 2px solid $hue;
+				width: 170px;
+				margin-bottom:38px;
+				margin-top: 26px;
+			}
+		}
+	}
+}
+@media (max-width:960px) {
+	.session.threePro{
+		padding-top: 60px;
+		.wrapper{
+			display: block;
+			a{
+				display: block;
+				max-width: 500px;
+				margin: 0 auto;
+				& + a{
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}
+
+.session.description{
+	max-width: $max-w;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 70px;
+	margin: 0 auto;
+	.title{
+		padding: 0 20px;
+		h2{
+			font-size: 24px;
+			color:#555555;
+		}
+		p{
+			font-size: 14px;
+			color: #555555;
+			margin-top: 14px;
+		}
+	}
+	.pic{
+		margin-top: 50px;
+		img{
+			width: 100%;
+		}
+	}
+	.imgTxt{
+		display: flex;
+		justify-content: space-between;
+		overflow: hidden;
+		margin-top: 74px;
+		a{
+			margin-right: 14px;
+			position: relative;
+			&:last-child{
+				margin-right: 0;
+			}
+			img{
+				width: 100%;
+			}
+			.titWrap{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba(0,0,0,.2);
+				height: 53px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: left;
+				color: #fff;
+				padding: 0 10px;
+				.tit{
+					font-size: 16px;
+					font-weight: bold;
+				}
+			}
+		}	
+	}
+}
+
+.session.subscribe{
+	.wrapper{
+		text-align: center;
+		padding: 78px 10px;
+		.tit{
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 50px;
+		}
+		.bar{
+			max-width: 640px;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			position: relative;
+			input{
+				flex: 1;
+				font-size: 20px;
+				width: 100%;
+				height: 60px;
+			}
+			.btn{
+				flex: none;
+				width: 158px;
+				background-color: $hue;
+				line-height: 60px;
+				height: 60px;
+				color: #fff;
+				box-sizing: border-box;
+				margin-left: 26px;
+				font-weight: bold;
+				font-size: 16px;
+			}
+			.succ{
+				flex: 1;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background-color: rgb(0, 160, 0);
+				color:#fff;
+				padding: 0 10px;
+				margin-right: 185px;
+				line-height: 60px;
+				font-size: 18px;
+				display: none;
+			}
+		}
+		.error{
+			max-width: 640px;
+			color: #fd163f;
+			text-align: left;
+			margin: 0 auto;
+			display: none;
+		}
+	}
+}
+
+
+// 登录
+.loginpage{
+	.wrapper{
+		max-width: 1140px;
+		margin: 118px auto;
+		padding: 0 10px;
+		display: flex;
+		justify-content: space-between;
+		.line{
+			flex: none;
+			width: 1px;
+			background-color: #979797;
+		}
+		.t-title{
+			h3{
+				font-size: 26px;
+				color: #4a4a4a;
+			}
+			p{
+				margin-top: 18px;
+			}
+			
+		}
+		.inpuItem{
+			margin-bottom: 20px;
+		}
+		.wrap{
+			width: 440px;
+			position: relative;
+			input{
+				width: 100%;
+			}
+			a.btn{
+				width: 138px;
+				line-height: 48px;
+				border-radius: 2px;
+				background-color: $hue;
+				display: block;
+				color: #fff;
+				font-weight: bold;
+				float: right;
+			}
+		}
+		.login{
+			flex: 1;
+			.wrap{
+				float: left;
+				.form{
+					margin-top: 60px;
+				}
+				a.btn{
+					margin-top: 50px;
+				}
+			}
+		}
+		.signup{
+			flex: 1;
+			.wrap{
+				float: right;
+				height: 100%;
+				a.btn{
+					position: absolute;
+					bottom: 0;
+					right: 0;
+				}
+			}
+		}
+		
+	}
+}
+@media (max-width:965px) {
+	.loginpage{
+		.wrapper{
+			flex-direction: column;
+			.wrap{
+				width: 100%;
+			}
+			.signup{
+				margin-top: 40px;
+				.wrap{
+					min-height: 168px;
+				}
+			}
+		}
+		.line{display: none;}
+	}
+}
+
+// 注册页面
+.singuppage{
+	.wrapper{
+		max-width: 1184px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	.t-title{
+		font-size: 14px;
+		color: #4a4a4a;
+		max-width: 645px;
+		margin-top: 120px;
+		margin-bottom: 60px;
+		h3{
+			font-size: 26px;
+			color: #4a4a4a;
+		}
+		p{
+			margin-top: 18px;
+		}
+		ul{
+			margin-left: 30px;
+			margin-top: 30px;
+			li{
+				position: relative;
+				padding-left: 28px;
+				&:after{
+					content:'';
+					position: absolute;
+					left: 0;
+					top: 50%;
+					margin-top:-3px;
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					background-color: #4a4a4a;
+				}
+			}
+		}
+	}
+	.form{
+		margin-bottom: 70px;
+		.wrap{
+			max-width: 700px;
+			.item{
+				margin-bottom: 30px;
+			}
+			
+		}
+		.btn{
+			width: 170px;
+			line-height: 48px;
+			border-radius: 2px;
+			background-color: $hue;
+			display: block;
+			color: #fff;
+			font-weight: bold;
+			float: right;
+			margin-top: 100px;
+		}
+	}
+}
+@media (max-width:768px) {
+	.singuppage{
+		.form{
+			.wrap{
+				.item {
+					margin-bottom: 0;
+					.inpuItem{
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	} 
+}
+.singuppage.step2{
+	.wrapper{
+		max-width: 1058px;
+		.form{
+			.wrap{
+				max-width: inherit;
+				.agree{
+					label{
+						margin-bottom: 0;
+						margin-top: 2px;
+						height: 16px;
+					}
+					p{
+						margin-left: 8px;
+					}
+				}
+			}
+			.btn{
+				margin-top: 0;
+			}
+		}
+	}
+}
+@media (min-width:768px) {
+	.singuppage.step2{
+		.wrapper{
+			.form{
+				.inpuItem.col-sm-6:first-child{
+					padding-right: 45px;
+				}
+				.inpuItem.col-sm-6:last-child{
+					padding-left: 45px;
+				}
+			}
+		}
+	}
+}
